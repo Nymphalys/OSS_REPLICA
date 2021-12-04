@@ -11,3 +11,9 @@ body {
     color: #000000;
     
 }
+
+.flex-container {
+    background-color: #fff;
+    box-shadow: 0 0 20px -5px #a4a5e4;
+    width: 50%;
+}
