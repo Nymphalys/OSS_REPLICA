@@ -19,12 +19,15 @@ body {
     box-shadow: 0 0 20px -5px #a4a5e4;
     width: 50%;
     display: flex;
+    flex-direction: row;
 }
 
 
 .options {
     background-color: #C6C6C6;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .leave {
