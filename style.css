@@ -27,8 +27,9 @@ body {
     color: black;
     padding: 16px 32px 16px 32px;
 }
-.header .header-start h1{
+.header .header-start h3{
     margin: 0px;
+    font-weight:bold
 }
 
 .header .header-end{
@@ -53,6 +54,7 @@ body {
 .header .header-end h4{
     margin: 0px;
     color: black;
+    font-weight: 500
 }
 
 /* content section */
@@ -73,13 +75,24 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+.content .left-panel h4{
+    margin: 14px 6px;
+}
+.content .left-panel ul{
+    margin: 4px ;
+    padding: 0px 16pxpx !important;
+}
+.content .left-panel li{
+    font-size: 14px;
+    margin: 8px 0;
+}
 
 .content .left-panel .user-image-area{
     height: 30%;
     text-align: center;
     padding: 8px;
     background-color: #fff;
-    box-shadow: 0 0 20px -5px #a4a5e4;
+    
     border-radius: 8px;
     object-fit: cover;
     overflow: hidden;
@@ -93,10 +106,12 @@ body {
 .content .left-panel .presenter-area{
     height: 20%;
     background-color: #fff;
-    box-shadow: 0 0 20px -5px #a4a5e4;
+    
     border-radius: 8px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
 
 
 
@@ -114,9 +129,9 @@ body {
 
 
 .content .left-panel .attendees-area{
-    height: 30%;
+    height: 42%;
     background-color: #fff;
-    box-shadow: 0 0 20px -5px #a4a5e4;
+    
     border-radius: 8px;
     overflow: scroll;
 }
@@ -128,7 +143,7 @@ body {
     width: 50%;
     display: flex;
     background-color: #fff;
-    box-shadow: 0 0 20px -5px #a4a5e4;
+    
     flex-direction: column;
     border-radius: 8px;
 }
@@ -140,30 +155,42 @@ body {
 .center-panel .presenter-screen-area #presenter-area{
     height: 100%;
 }
+.center-panel .presenter-name h4{
+    color: black;
+    margin: 16px;
+    font-weight: 500;
+}
 
 .right-panel{
     height: 100%;
     width: 20%;
     background-color:#f5f7fb;
     border-radius: 8px;
-    flex-direction: column;
-    justify-content: space-around;
     display: flex;
-    padding: 0px 16px 0px 16px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 0px 0px 0px;
 }
 
 .right-panel .one-participant{
-    box-shadow: 0 0 20px -5px #a4a5e4;
-    background-color: #C6C6C6;
+    
+    background-color: white;
     border-radius:8px;
-    height:30%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    height:29%;
+    width: 95%;
+    padding: 8px;
+
 }
 
-.right-panel .one-participant:hover{
+.right-panel .one-participant .participant-box-area{
+    background-color: #C6C6C6;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-panel .one-participant .participant-box-area:hover{
     background-color: #AAFFD6;
 }
 
@@ -171,19 +198,28 @@ body {
     background-color: #fff;
     border-radius: 100%;
     text-align: center;
-    width:70px;
-    height:70px;
-    padding: 16px;
+    width:80px;
+    height:80px;
+    margin: auto;
+    outline: 2px solid #AAFFD6;
+    outline-offset: -5px ;
 }
 
 .right-panel .one-participant .participant-box-name span{
     color: #000000;
     font-size: 32px;
+    line-height: 70px;
+
 }
 
 .right-panel .one-participant .participants-speaker{
     width: 100%;
-    height: 10%;
+    height: 15%;
+}
+.right-panel .one-participant .participants-speaker img{
+    width: 10px;
+    position: relative;
+    left: 5%;
 }
 /* content section ends */
 
@@ -195,8 +231,8 @@ body {
     background-color: #fff;
     justify-content: space-around;
     border-radius: 8px;
-    padding: 16px 8px;
-    
+    padding: 16px 20px;
+    justify-content: space-between;
 }
 
 .footer .option-area{
@@ -222,6 +258,15 @@ body {
     padding: 8px 2px;
 }
 
+.footer .user-details-area .presenter-name{
+    font-family: 'Segoe UI';
+    color: #111;
+           
+}
+.footer .user-details-area .presenter-name h4{
+    margin-bottom: 0px;
+    font-weight: 500;
+}
 .footer .footer-end .leave-button {
     width:100px;
     height: 42px;
