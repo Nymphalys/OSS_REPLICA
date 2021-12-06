@@ -263,6 +263,10 @@ body {
     color: #111;
            
 }
+.footer .user-details-area .presenter-role{
+    text-align: center;
+           
+}
 .footer .user-details-area .presenter-name h4{
     margin-bottom: 0px;
     font-weight: 500;
