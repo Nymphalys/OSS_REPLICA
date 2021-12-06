@@ -2,12 +2,11 @@
 body {
     background-color: #f5f7fb;
     color: #808080;
-    font-family: Segoe UI;
+    font-family: Montserrat,Roboto, Segoe UI !important;
     margin: 0px;
 }
 
 .boldtopic {
-    font-family: Gilroy-Bold,sans-serif;
     color: #000000;
     font-size: 1.25rem;
 }
@@ -29,14 +28,17 @@ body {
 }
 .header .header-start h3{
     margin: 0px;
-    font-weight:bold
+    font-weight:bold;
+    line-height: 36px;
+
 }
 
 .header .header-end{
     display: flex;
     flex-direction: row;
-    gap: 16px;
-    padding: 16px 16px;
+    gap: 8px;
+    padding: 16px 80px !important;
+
 }
 .header .header-end div{
     padding: 8px 4px
@@ -51,21 +53,22 @@ body {
     width: 25px;
     height: 25px;
 }
-.header .header-end h4{
+.header .header-end h4 {
     margin: 0px;
     color: black;
-    font-weight: 500
+    font-weight: bold;
+    line-height: 27px;
 }
 
 /* content section */
 
 .content{
-    width: 100%;
     height: 70%;
-    padding: 16px 0px 16px 0px;
+    padding: 16px 48px 16px 48px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 .content .left-panel{
@@ -83,7 +86,7 @@ body {
     padding: 0px 16pxpx !important;
 }
 .content .left-panel li{
-    font-size: 14px;
+    font-size: 12px;
     margin: 8px 0;
 }
 
@@ -109,13 +112,13 @@ body {
 
 }
 .content .left-panel .presenter-area .list{
-    height: 60px;
+    height: 45px;
     width: 88%;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 .content .left-panel .attendees-area .list{
-    height: 160px;
+    height: 165px;
     width: 88%;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -171,7 +174,7 @@ body {
 
 .center-panel{
     height: 100%;
-    width: 50%;
+    width: 55%;
     display: flex;
     background-color: #fff;
     
@@ -185,12 +188,12 @@ body {
 }
 .center-panel .presenter-screen-area #presenter-area{
     height: 100%;
+    padding: 16px;
 }
 .center-panel .presenter-name h4{
     color: black;
     margin: 16px;
-    font-weight: 500;
-    font-family: Segoe UI;
+    font-weight: bold;
 }
 
 .right-panel{
@@ -202,14 +205,26 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 0px 0px 0px 0px;
+    overflow: hidden;
 }
+.right-panel .attendees-list-scroll{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* scroll bar */ 
+.attendees-list-scroll::-webkit-scrollbar {
+    width: 0px;
+}
+
 
 .right-panel .one-participant{
     background-color: white;
     border-radius:8px;
-    height:29%;
+    height:28%;
     width: 95%;
     padding: 8px;
+    margin-bottom: 8px;
 
 }
 
@@ -238,19 +253,24 @@ body {
 
 .right-panel .one-participant .participant-box-name span{
     color: #000000;
-    font-size: 32px;
-    line-height: 70px;
+    font-size: 26px;
+    line-height: 80px;
 
 }
 
 .right-panel .one-participant .participants-speaker{
     width: 100%;
-    height: 15%;
+    height: 17%;
 }
 .right-panel .one-participant .participants-speaker img{
     width: 10px;
     position: relative;
-    left: 5%;
+    left: 4%;
+}
+.right-panel .one-participant .participants-speaker #muted-mic-image{
+    width: 12px;
+    position: relative;
+    left: 4%;
 }
 /* content section ends */
 
@@ -262,7 +282,7 @@ body {
     background-color: #fff;
     justify-content: space-around;
     border-radius: 8px;
-    padding: 16px 30px 16px 30px;
+    padding: 16px 52px;
     justify-content: space-between;
 }
 
@@ -286,13 +306,11 @@ body {
 }
 
 .footer .option-area .options .option-icon{
-    padding: 8px 2px;
+    padding: 13px;
 }
 
 .footer .user-details-area .presenter-name{
-    
-    font-family: Gilroy-Regular,sans-serif;
-    color: #111;
+        color: #111;
            
 }
 .footer .user-details-area .presenter-role{
@@ -301,8 +319,10 @@ body {
 }
 .footer .user-details-area .presenter-name h4{
     margin-bottom: 0px;
-    font-weight: 500;
-    font-family: Segoe UI;
+    font-weight: bold;
+}
+.footer .footer-end {
+    padding: 16px;
 }
 .footer .footer-end .leave-button {
     width:100px;
@@ -322,7 +342,7 @@ body {
     padding: 11px 0px;
 }
 .footer .footer-end .leave-button span{
-    padding: 8px 0px;
+    padding: 11px 0px;
 }
 .footer .footer-end .leave-button:hover{
     transform: scale(1.1);
