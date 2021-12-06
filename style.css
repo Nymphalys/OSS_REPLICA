@@ -159,6 +159,7 @@ body {
     color: black;
     margin: 16px;
     font-weight: 500;
+    font-family: Segoe UI;
 }
 
 .right-panel{
@@ -259,7 +260,8 @@ body {
 }
 
 .footer .user-details-area .presenter-name{
-    font-family: 'Segoe UI';
+    
+    font-family: Gilroy-Regular,sans-serif;
     color: #111;
            
 }
@@ -270,6 +272,7 @@ body {
 .footer .user-details-area .presenter-name h4{
     margin-bottom: 0px;
     font-weight: 500;
+    font-family: Segoe UI;
 }
 .footer .footer-end .leave-button {
     width:100px;
