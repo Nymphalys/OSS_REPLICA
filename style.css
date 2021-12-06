@@ -3,15 +3,13 @@ body {
     background-color: #f5f7fb;
     color: #808080;
     font-family: Segoe UI;
-
+    margin: 0px;
 }
 
 .boldtopic {
-
     font-family: Gilroy-Bold,sans-serif;
     color: #000000;
     font-size: 1.25rem;
-    
 }
 
 
@@ -22,9 +20,6 @@ body {
     width: 100%;
     display: flex;
     gap: 10px;
-    border-radius: 7px;
-    border-top-left-radius: 0%;
-    border-top-right-radius: 0%;
     justify-content: space-between;
 }
 
@@ -32,10 +27,32 @@ body {
     color: black;
     padding: 16px 32px 16px 32px;
 }
+.header .header-start h1{
+    margin: 0px;
+}
 
 .header .header-end{
     display: flex;
     flex-direction: row;
+    gap: 16px;
+    padding: 16px 16px;
+}
+.header .header-end div{
+    padding: 8px 4px
+}
+.header .header-end{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    padding: 16px 16px;
+}
+.header .header-end #recoder-icon{
+    width: 25px;
+    height: 25px;
+}
+.header .header-end h4{
+    margin: 0px;
+    color: black;
 }
 
 /* content section */
@@ -51,32 +68,46 @@ body {
 
 .content .left-panel{
     height: 100%;
-    width: 25%;
-
-    
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content .left-panel .user-image-area{
     height: 30%;
     text-align: center;
+    padding: 8px;
     background-color: #fff;
     box-shadow: 0 0 20px -5px #a4a5e4;
     border-radius: 8px;
-
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .content .left-panel .user-image-area #user-image{
-    width: 80%;
     height: 100%;
+    width: 100%;
 }
 
 .content .left-panel .presenter-area{
-    height: 30%;
+    height: 20%;
     background-color: #fff;
     box-shadow: 0 0 20px -5px #a4a5e4;
     border-radius: 8px;
     overflow: scroll;
 }
+.content .left-panel  .heading{
+    color: black;
+    font-weight: bold;
+    margin-left: 16px;
+}
+.content .left-panel  ul{
+    width: 80%;
+    padding-inline-start: 16px;
+
+}
+
 
 
 .content .left-panel .attendees-area{
@@ -89,11 +120,9 @@ body {
 
 
 
-
-
 .center-panel{
     height: 100%;
-    width: 40%;
+    width: 50%;
     display: flex;
     background-color: #fff;
     box-shadow: 0 0 20px -5px #a4a5e4;
@@ -111,7 +140,7 @@ body {
 
 .right-panel{
     height: 100%;
-    width: 25%;
+    width: 20%;
     background-color: white;
     border-radius: 8px;
     flex-direction: column;
@@ -126,6 +155,9 @@ body {
     border-radius:8px;
     height:30%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .right-panel .one-participant:hover{
@@ -138,8 +170,14 @@ body {
     text-align: center;
     width:70px;
     height:70px;
-    
+    padding: 16px;
 }
+
+.right-panel .one-participant .participant-box-name span{
+    color: #000000;
+    font-size: 32px;
+}
+
 .right-panel .one-participant .participants-speaker{
     width: 100%;
     height: 10%;
@@ -152,9 +190,9 @@ body {
     display: flex;
     flex-direction: row;
     background-color: #fff;
-    box-shadow: 0 0 20px -5px #a4a5e4;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 8px;
+    padding: 16px 8px;
 
 }
 
@@ -181,6 +219,27 @@ body {
     padding: 8px 2px;
 }
 
+
+.footer .footer-end .leave-button {
+    width:100px;
+    height: 42px;
+    background-color: #FF2C2C;
+    color: white;
+    border-radius: 6px;
+    padding: 0px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.footer .footer-end .leave-button img{
+    width: 25px;
+    height: 20px;
+    padding: 11px 0px;
+}
+.footer .footer-end .leave-button span{
+    padding: 8px 0px;
+}
 /* footer end */
 
 .options {
